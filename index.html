@@ -1,45 +1,110 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flaminio Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>منيو فلامينيو</title>  <meta name="description" content="منيو مطعم فلامينيو">  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      min-height: 100vh;
+      background: #f5f5f5;
+      font-family: Arial, Tahoma, sans-serif;
+      color: #222;
+    }
+
+    .header {
+      background: #ffffff;
+      padding: 25px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .subtitle {
+      margin: 7px 0 0;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .menu {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 10px 40px;
+    }
+
+    .menu img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      background: white;
+    }
+
+    .empty {
+      min-height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-
-    .box {
-      background: white;
-      padding: 40px 25px;
-      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
-      max-width: 400px;
-      width: 85%;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
       color: #777;
     }
-  </style>
-</head>
 
-<body>
-  <div class="box">
-    <h1>🍽️ فلامينيو</h1>
-    <p>المنيو قريبًا...</p>
+    .empty-box {
+      background: white;
+      padding: 35px 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    }
+
+    .empty-box h2 {
+      margin-top: 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      color: #888;
+      font-size: 13px;
+    }
+  </style></head><body>  <header class="header">
+    <h1 class="logo">🍽️ فلامينيو</h1>
+    <p class="subtitle">Menu</p>
+  </header>  <main class="menu"><!--
+  عندما تصل صور المنيو:
+  ارفع الصور إلى نفس Repository
+  ثم غيّر أسماء الصور هنا.
+
+  مثال:
+
+  <img src="menu1.jpg" alt="منيو فلامينيو - الصفحة الأولى">
+  <img src="menu2.jpg" alt="منيو فلامينيو - الصفحة الثانية">
+  <img src="menu3.jpg" alt="منيو فلامينيو - الصفحة الثالثة">
+-->
+
+<div class="empty">
+  <div class="empty-box">
+    <h2>المنيو قريبًا 🍽️</h2>
+    <p>سيتم تحديث المنيو هنا قريبًا.</p>
   </div>
-</body>
+</div>
+
+  </main>  <footer class="footer">
+    فلامينيو © جميع الحقوق محفوظة
+  </footer></body>
 </html>
